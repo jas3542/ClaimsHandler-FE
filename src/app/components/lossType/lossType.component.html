@@ -1,0 +1,14 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+          <th scope="col">Loss Type Code</th>
+          <th scope="col">Loss Type Description</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr *ngFor="let item of lossType">
+            <td>{{item.lossTypeCode}}</td>
+            <td>{{item.lossTypeDescription}}</td>
+        </tr>
+    </tbody>
+</table>
