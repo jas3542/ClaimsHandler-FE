@@ -5,3 +5,8 @@
 1. Install NodeJS and NPM (https://nodejs.org/en/download)
 2. Go to the project root folder and install the dependencies by running npm install from the command line
 3. Start the application by running npm serve and go to the URL http://localhost:4200
+
+#TODO:
+* List needs pagination.
+* Logout is not implemented yet.
+* redirections to the login when token expires is not implemented yet.
