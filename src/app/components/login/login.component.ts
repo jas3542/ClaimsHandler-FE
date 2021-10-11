@@ -40,11 +40,12 @@ export class LoginComponent implements OnInit {
 
     this.formSubmitted = true;
 
-    var l = new Login()
-    l.UserName="gemmela";
-    l.Password="Archie";
+    var LoginForm = new Login()
+    LoginForm.UserName = this.login_Form.controls.username.value;
+    LoginForm.Password = this.login_Form.controls.password.value;
 
-    this.loginService.Login(l).subscribe(
+
+    this.loginService.Login(LoginForm).subscribe(
       data => {this.router.navigateByUrl('/loseType')}
 
     );
